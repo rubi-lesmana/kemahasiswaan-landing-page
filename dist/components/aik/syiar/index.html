@@ -1,0 +1,152 @@
+<section id="syiar" class="scroll-mt-28 mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <!-- Header & Tombol Navigasi Carousel -->
+    <div class="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
+        <div>
+            <h2 class="text-2xl font-bold text-brand-700">Syiar</h2>
+            <p class="mt-1 text-sm text-slate-500">Publikasi fatwa, amaliyah, dan do'a tuntunan Muhammadiyah.</p>
+        </div>
+
+        <!-- Tombol Panah Navigasi Carousel -->
+        <div class="flex items-center gap-2">
+            <button onclick="scrollSyiar('left')" aria-label="Geser ke kiri"
+                class="grid h-10 w-10 place-items-center rounded-full border border-gray-200 bg-white text-slate-600 shadow-xs transition-all duration-200 hover:border-sakinah-600 hover:bg-sakinah-600 hover:text-white active:scale-95">
+                <i class="fa-solid fa-chevron-left text-sm"></i>
+            </button>
+            <button onclick="scrollSyiar('right')" aria-label="Geser ke kanan"
+                class="grid h-10 w-10 place-items-center rounded-full border border-gray-200 bg-white text-slate-600 shadow-xs transition-all duration-200 hover:border-sakinah-600 hover:bg-sakinah-600 hover:text-white active:scale-95">
+                <i class="fa-solid fa-chevron-right text-sm"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Container Carousel Slider (Horizontal Scroll dengan Snap) -->
+    <div id="syiar-carousel"
+        class="no-scrollbar mt-8 flex snap-x snap-mandatory gap-6 overflow-x-auto pb-6 pt-2 scroll-smooth">
+
+        <!-- Card 1: Fatwa -->
+        <article
+            class="group relative flex w-[300px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-lg active:scale-[0.98] sm:w-[350px]">
+            <a href="detail-syiar.html?id=fatwa-tarjih-media-sosial" class="absolute inset-0 z-10"
+                aria-label="Lihat detail Fatwa Majelis Tarjih"></a>
+
+            <div>
+                <!-- Top Row: (Kategori + Judul) di Kiri & Gambar Sejajar di Kanan -->
+                <div class="flex items-start justify-between gap-4">
+                    <div class="flex-1">
+                        <span class="block text-[11px] font-bold uppercase tracking-wider text-sakinah-600">
+                            FATWA TARJIH
+                        </span>
+                        <h3
+                            class="mt-1.5 text-base font-bold leading-snug text-brand-700 transition-colors duration-200 group-hover:text-sakinah-700">
+                            Hukum dan Fiqih Bermedia Sosial menurut Majelis Tarjih
+                        </h3>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?auto=format&fit=crop&q=80&w=200"
+                        alt="Fatwa Majelis Tarjih" class="h-20 w-24 shrink-0 rounded-lg object-cover" />
+                </div>
+
+                <!-- Deskripsi -->
+                <p class="mt-3 line-clamp-2 text-sm text-slate-500">
+                    Tuntunan dan panduan etika berinteraksi digital sesuai keputusan Majelis Tarjih dan Tajdid.
+                </p>
+            </div>
+
+            <!-- Bottom Row: Meta Info -->
+            <div class="mt-4 flex items-center gap-4 border-t border-slate-100 pt-3 text-xs text-slate-400">
+                <span class="flex items-center gap-1.5 font-medium text-slate-600">
+                    <i class="fa-regular fa-user text-slate-400"></i> Majelis Tarjih
+                </span>
+                <span class="flex items-center gap-1">
+                    <i class="fa-regular fa-comment text-slate-400"></i> 0
+                </span>
+                <span class="flex items-center gap-1">
+                    <i class="fa-regular fa-eye text-slate-400"></i> 342
+                </span>
+            </div>
+        </article>
+
+        <!-- Card 2: Amaliyah -->
+        <article
+            class="group relative flex w-[300px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-lg active:scale-[0.98] sm:w-[350px]">
+            <a href="detail-syiar.html?id=amaliyah-salat-lail-dzikir" class="absolute inset-0 z-10"
+                aria-label="Lihat detail Amaliyah Dzikir dan Doa"></a>
+
+            <div>
+                <!-- Top Row: (Kategori + Judul) di Kiri & Gambar Sejajar di Kanan -->
+                <div class="flex items-start justify-between gap-4">
+                    <div class="flex-1">
+                        <span class="block text-[11px] font-bold uppercase tracking-wider text-sakinah-600">
+                            AMALIYAH
+                        </span>
+                        <h3
+                            class="mt-1.5 text-base font-bold leading-snug text-brand-700 transition-colors duration-200 group-hover:text-sakinah-700">
+                            Tuntunan Salat Lail dan Dzikir Sesuai HPT Muhammadiyah
+                        </h3>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&q=80&w=200"
+                        alt="Tuntunan Ibadah Harian" class="h-20 w-24 shrink-0 rounded-lg object-cover" />
+                </div>
+
+                <!-- Deskripsi -->
+                <p class="mt-3 line-clamp-2 text-sm text-slate-500">
+                    Panduan praktis amaliyah ibadah malam dan zikir berdasarkan Himpunan Putusan Tarjih.
+                </p>
+            </div>
+
+            <!-- Bottom Row: Meta Info -->
+            <div class="mt-4 flex items-center gap-4 border-t border-slate-100 pt-3 text-xs text-slate-400">
+                <span class="flex items-center gap-1.5 font-medium text-slate-600">
+                    <i class="fa-regular fa-user text-slate-400"></i> Tim LPPI
+                </span>
+                <span class="flex items-center gap-1">
+                    <i class="fa-regular fa-comment text-slate-400"></i> 2
+                </span>
+                <span class="flex items-center gap-1">
+                    <i class="fa-regular fa-eye text-slate-400"></i> 518
+                </span>
+            </div>
+        </article>
+
+        <!-- Card 3: Do'a -->
+        <article
+            class="group relative flex w-[300px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-lg active:scale-[0.98] sm:w-[350px]">
+            <a href="detail-syiar.html?id=doa-penuntut-ilmu" class="absolute inset-0 z-10"
+                aria-label="Lihat detail Doa Sebelum dan Sesudah Belajar"></a>
+
+            <div>
+                <!-- Top Row: (Kategori + Judul) di Kiri & Gambar Sejajar di Kanan -->
+                <div class="flex items-start justify-between gap-4">
+                    <div class="flex-1">
+                        <span class="block text-[11px] font-bold uppercase tracking-wider text-sakinah-600">
+                            DO'A THALABUL 'ILMI
+                        </span>
+                        <h3
+                            class="mt-1.5 text-base font-bold leading-snug text-brand-700 transition-colors duration-200 group-hover:text-sakinah-700">
+                            Kumpulan Do'a Penuntut Ilmu dalam Perkuliahan
+                        </h3>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=200"
+                        alt="Doa Penuntut Ilmu" class="h-20 w-24 shrink-0 rounded-lg object-cover" />
+                </div>
+
+                <!-- Deskripsi -->
+                <p class="mt-3 line-clamp-2 text-sm text-slate-500">
+                    Do'a memohon kelancaran belajar, keberkahan ilmu, serta kemudahan ujian bagi mahasiswa.
+                </p>
+            </div>
+
+            <!-- Bottom Row: Meta Info -->
+            <div class="mt-4 flex items-center gap-4 border-t border-slate-100 pt-3 text-xs text-slate-400">
+                <span class="flex items-center gap-1.5 font-medium text-slate-600">
+                    <i class="fa-regular fa-user text-slate-400"></i> Redaksi AIK
+                </span>
+                <span class="flex items-center gap-1">
+                    <i class="fa-regular fa-comment text-slate-400"></i> 1
+                </span>
+                <span class="flex items-center gap-1">
+                    <i class="fa-regular fa-eye text-slate-400"></i> 289
+                </span>
+            </div>
+        </article>
+    </div>
+</section>

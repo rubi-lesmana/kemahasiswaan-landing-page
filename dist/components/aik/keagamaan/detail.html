@@ -1,0 +1,109 @@
+<article data-keagamaan-detail class="max-w-5xl mx-auto px-6 sm:px-10 pt-10 pb-20">
+
+    <!-- Tombol kembali -->
+    <a href="index.html#kegiatan"
+        class="inline-flex items-center text-sm text-slate-500 hover:text-slate-900 transition-colors mb-8">
+        &larr;&nbsp;Kembali ke Kegiatan Keagamaan
+    </a>
+
+    <!-- Header: judul + meta + ringkasan + tombol -->
+    <header class="max-w-3xl">
+        <!-- Judul, kategori, dan tanggal diisi oleh js/keagamaan.js -->
+        <h1 data-keagamaan-title
+            class="text-3xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-slate-900 mb-5"></h1>
+
+        <dl class="flex flex-wrap gap-x-8 gap-y-4 mb-8 text-xs">
+            <div>
+                <dt class="text-slate-400 mb-1">Tanggal</dt>
+                <dd data-keagamaan-date class="text-slate-900"></dd>
+            </div>
+            <div>
+                <dt class="text-slate-400 mb-1">Kategori</dt>
+                <dd data-keagamaan-category class="text-slate-900"></dd>
+            </div>
+            <div>
+                <dt class="text-slate-400 mb-1">Penulis</dt>
+                <dd class="text-slate-900">Humas Kampus</dd>
+            </div>
+        </dl>
+
+        <p class="text-sm text-slate-600 leading-relaxed mb-6">
+            Kegiatan keagamaan menjadi bagian dari pembinaan Al-Islam dan Kemuhammadiyahan bagi mahasiswa, yang
+            diselenggarakan secara berkala di lingkungan kampus.
+        </p>
+
+        <a href="#konten" class="inline-flex items-center gap-3 group">
+            <span
+                class="flex h-7 w-7 items-center justify-center rounded-full bg-slate-900 text-white text-[11px] transition-transform group-hover:translate-y-0.5">
+                <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+            </span>
+            <span class="text-[10px] font-medium tracking-wide text-slate-600">Baca selengkapnya</span>
+        </a>
+    </header>
+
+    <!-- Gambar utama: diisi oleh js/keagamaan.js -->
+    <figure class="mt-12 mb-16">
+        <img data-keagamaan-image src="" alt="" class="w-full aspect-[16/10] object-cover rounded-sm">
+    </figure>
+
+    <!-- Konten: kolom share (kiri) + isi (kanan) -->
+    <div id="konten" class="grid grid-cols-[2.5rem_1fr] sm:grid-cols-[6rem_1fr] gap-x-4 scroll-mt-28">
+
+        <!-- Ikon share -->
+        <aside>
+            <ul class="sticky top-28 flex flex-col gap-4 text-base text-slate-500">
+                <li>
+                    <a href="#" aria-label="Bagikan ke Instagram" class="hover:text-slate-900 transition-colors">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Bagikan ke X" class="hover:text-slate-900 transition-colors">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Bagikan ke WhatsApp" class="hover:text-slate-900 transition-colors">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Isi artikel (sama untuk semua kegiatan; ganti dengan teks asli) -->
+        <div class="max-w-2xl">
+            <h2 class="text-xl sm:text-2xl font-medium tracking-tight text-slate-900 mb-4">
+                Membangun karakter Islami di lingkungan kampus
+            </h2>
+
+            <div class="space-y-4 text-sm leading-relaxed text-slate-600">
+                <p>
+                    Kegiatan keagamaan menjadi bagian penting dalam pembinaan mahasiswa. Melalui kegiatan ini,
+                    mahasiswa memperdalam pemahaman Al-Islam dan Kemuhammadiyahan sekaligus mempererat kebersamaan
+                    antarsivitas akademika.
+                </p>
+                <p>
+                    Kegiatan terbuka bagi mahasiswa dan dilaksanakan dengan pendampingan dosen serta pembina AIK.
+                </p>
+            </div>
+
+            <h3 class="text-base font-medium text-slate-900 mt-10 mb-3">Tujuan Kegiatan</h3>
+            <p class="text-sm leading-relaxed text-slate-600">
+                Kegiatan ini bertujuan menumbuhkan nilai keislaman, akhlak, dan semangat bermuhammadiyah pada diri
+                mahasiswa, sehingga nilai-nilai tersebut tercermin dalam kehidupan akademik maupun sosial.
+            </p>
+
+            <h3 class="text-base font-medium text-slate-900 mt-10 mb-3">Peserta dan Pelaksanaan</h3>
+            <p class="text-sm leading-relaxed text-slate-600">
+                Peserta mengikuti rangkaian kegiatan sesuai jadwal yang ditetapkan panitia, mulai dari pembukaan,
+                materi pembinaan, hingga penutupan. Informasi lengkap disampaikan melalui pengumuman resmi kampus.
+            </p>
+
+            <h3 class="text-base font-medium text-slate-900 mt-10 mb-3">Manfaat bagi Mahasiswa</h3>
+            <p class="text-sm leading-relaxed text-slate-600">
+                Mahasiswa memperoleh bekal pemahaman keagamaan, pengalaman berorganisasi, serta jejaring pertemanan
+                yang mendukung perjalanan studi di kampus.
+            </p>
+        </div>
+    </div>
+</article>

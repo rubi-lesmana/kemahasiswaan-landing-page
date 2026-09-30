@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* ruang untuk navbar melayang saat lompat ke anchor */
+    scroll-padding-top: 6rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-slate-50 font-sans text-slate-700 antialiased;
+  }
+
+  :where(a, button, summary):focus-visible {
+    outline: 2px solid theme('colors.brand.600');
+    outline-offset: 3px;
+  }
+}
+
+/* Keyframes untuk animasi isometric melayang */
+@keyframes float-iso {
+  0%, 100% {
+    transform: translateY(0px) rotateX(52deg) rotateZ(-45deg);
+  }
+  50% {
+    transform: translateY(-12px) rotateX(52deg) rotateZ(-45deg);
+  }
+}
+
+@layer utilities {
+  /* Class khusus untuk animasi melayang isometric */
+  .animate-float-iso {
+    animation: float-iso 6s ease-in-out infinite;
+  }
+}

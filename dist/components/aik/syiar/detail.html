@@ -1,0 +1,106 @@
+<article data-syiar-detail class="max-w-5xl mx-auto px-6 sm:px-10 pt-10 pb-20">
+
+    <!-- Tombol kembali -->
+    <a href="index.html#syiar"
+        class="inline-flex items-center text-sm text-slate-500 hover:text-slate-900 transition-colors mb-8">
+        &larr;&nbsp;Kembali ke Syiar
+    </a>
+
+    <!-- Header: judul + meta + ringkasan + tombol -->
+    <header class="max-w-3xl">
+        <!-- Judul, meta, dan ringkasan diisi oleh js/syiar.js -->
+        <h1 data-syiar-title class="text-3xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-slate-900 mb-5">
+        </h1>
+
+        <dl class="flex flex-wrap gap-x-8 gap-y-4 mb-8 text-xs">
+            <div>
+                <dt class="text-slate-400 mb-1">Kategori</dt>
+                <dd data-syiar-category class="text-slate-900"></dd>
+            </div>
+            <div>
+                <dt class="text-slate-400 mb-1">Penulis</dt>
+                <dd data-syiar-author class="text-slate-900"></dd>
+            </div>
+            <div>
+                <dt class="text-slate-400 mb-1">Dibaca</dt>
+                <dd data-syiar-views class="text-slate-900"></dd>
+            </div>
+        </dl>
+
+        <p data-syiar-lead class="text-sm text-slate-600 leading-relaxed mb-6"></p>
+
+        <a href="#konten" class="inline-flex items-center gap-3 group">
+            <span
+                class="flex h-7 w-7 items-center justify-center rounded-full bg-slate-900 text-white text-[11px] transition-transform group-hover:translate-y-0.5">
+                <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+            </span>
+            <span class="text-[10px] font-medium tracking-wide text-slate-600">Baca selengkapnya</span>
+        </a>
+    </header>
+
+    <!-- Gambar utama: diisi oleh js/syiar.js -->
+    <figure class="mt-12 mb-16">
+        <img data-syiar-image src="" alt="" class="w-full aspect-[16/10] object-cover rounded-sm">
+    </figure>
+
+    <!-- Konten: kolom share (kiri) + isi (kanan) -->
+    <div id="konten" class="grid grid-cols-[2.5rem_1fr] sm:grid-cols-[6rem_1fr] gap-x-4 scroll-mt-28">
+
+        <!-- Ikon share -->
+        <aside>
+            <ul class="sticky top-28 flex flex-col gap-4 text-base text-slate-500">
+                <li>
+                    <a href="#" aria-label="Bagikan ke Instagram" class="hover:text-slate-900 transition-colors">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Bagikan ke X" class="hover:text-slate-900 transition-colors">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Bagikan ke WhatsApp" class="hover:text-slate-900 transition-colors">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Isi artikel (sama untuk semua materi syiar; ganti dengan teks asli) -->
+        <div class="max-w-2xl">
+            <h2 class="text-xl sm:text-2xl font-medium tracking-tight text-slate-900 mb-4">
+                Materi syiar untuk memperkuat pemahaman keislaman
+            </h2>
+
+            <div class="space-y-4 text-sm leading-relaxed text-slate-600">
+                <p>
+                    Syiar Al-Islam dan Kemuhammadiyahan hadir sebagai referensi bagi mahasiswa dalam memahami dan
+                    mengamalkan ajaran Islam sesuai tuntunan Muhammadiyah dalam kehidupan sehari-hari.
+                </p>
+                <p>
+                    Materi disusun dan dikurasi oleh tim yang berwenang, kemudian dibagikan agar mudah diakses oleh
+                    seluruh civitas akademika.
+                </p>
+            </div>
+
+            <h3 class="text-base font-medium text-slate-900 mt-10 mb-3">Tentang Materi Ini</h3>
+            <p class="text-sm leading-relaxed text-slate-600">
+                Setiap materi memuat penjelasan ringkas dan praktis agar dapat dipahami oleh pembaca dari berbagai
+                latar belakang program studi.
+            </p>
+
+            <h3 class="text-base font-medium text-slate-900 mt-10 mb-3">Rujukan dan Sumber</h3>
+            <p class="text-sm leading-relaxed text-slate-600">
+                Materi merujuk pada sumber-sumber resmi persyarikatan, termasuk keputusan Majelis Tarjih dan Tajdid
+                serta Himpunan Putusan Tarjih.
+            </p>
+
+            <h3 class="text-base font-medium text-slate-900 mt-10 mb-3">Manfaat bagi Mahasiswa</h3>
+            <p class="text-sm leading-relaxed text-slate-600">
+                Mahasiswa memperoleh panduan yang dapat langsung diamalkan, sekaligus bahan diskusi dalam kajian dan
+                kegiatan pembinaan di kampus.
+            </p>
+        </div>
+    </div>
+</article>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Satu halaman lengkap: organisasi mahasiswa, UKM, prestasi, layanan mahasiswa, kegiatan keagamaan, kajian, syiar, dan nilai Kemuhammadiyahan di Universitas Muda." />
+    <meta name="theme-color" content="#f8fafc" />
+    <title>Universitas Muda | Kemahasiswaan & Al-Islam Kemuhammadiyahan</title>
+    <link rel="icon" type="image/svg+xml" href="images/logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Allura&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="js/keagamaan.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body class="bg-slate-50 min-h-screen flex flex-col justify-between">
+
+    <!-- Reuse Navbar -->
+    <div data-include="components/navbar.html"></div>
+
+    <!-- Konten Utama Blog Detail -->
+    <main class="flex-grow pt-20">
+        <div data-include="components/aik/keagamaan/detail.html"></div>
+    </main>
+
+    <!-- Reuse Footer -->
+    <div data-include="components/footer.html"></div>
+
+</body>
+
+</html>

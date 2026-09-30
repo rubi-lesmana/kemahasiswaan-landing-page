@@ -1,0 +1,155 @@
+<!-- SECTION FAQ & PERTANYAAN (2 GRID LAYOUT) -->
+<section id="faq" class="scroll-mt-28 mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <!-- Header Section -->
+    <div class="mb-12 text-center">
+        <span class="text-xs font-bold uppercase tracking-wider text-sakinah-600">
+            Paling Sering Ditanyakan
+        </span>
+        <h2 class="mt-2 text-3xl font-bold tracking-tight text-brand-700 sm:text-4xl">
+            Frequently Asked Questions (FAQ)
+        </h2>
+        <p class="mt-3 text-base text-slate-500">
+            Informasi praktis seputar layanan, organisasi, dan kegiatan kemahasiswaan.
+        </p>
+    </div>
+
+    <!-- Grid 2 Kolom: Kiri Accordion FAQ (Garis Pemisah), Kanan Form Request -->
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:items-start">
+
+        <!-- GRID 1: ACCORDION FAQ - TANPA BOX, HANYA GARIS PEMISAH (7 COLS) -->
+        <div class="divide-y divide-slate-200 border-y border-slate-200 lg:col-span-7">
+
+            <!-- Item FAQ 1 -->
+            <details class="group py-4">
+                <summary
+                    class="flex cursor-pointer items-center justify-between gap-4 font-semibold text-brand-700 transition-colors group-hover:text-sakinah-600 select-none">
+                    <span class="text-base">Bagaimana cara mendaftar ke UKM atau Organisasi Mahasiswa?</span>
+                    <span
+                        class="grid h-8 w-8 shrink-0 place-items-center rounded-full text-slate-400 transition-transform duration-300 group-open:rotate-180 group-open:text-sakinah-600">
+                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                    </span>
+                </summary>
+                <div class="mt-3 pr-8 text-sm leading-relaxed text-slate-600">
+                    Pendaftaran UKM dan Ormawa dibuka setiap awal semester ganjil melalui Open Recruitment resmi.
+                    Mahasiswa dapat mendaftar secara online melalui portal kemahasiswaan atau mengunjungi stand
+                    pendaftaran saat expo ormawa.
+                </div>
+            </details>
+
+            <!-- Item FAQ 2 -->
+            <details class="group py-4">
+                <summary
+                    class="flex cursor-pointer items-center justify-between gap-4 font-semibold text-brand-700 transition-colors group-hover:text-sakinah-600 select-none">
+                    <span class="text-base">Apa saja alur pengajuan Surat Rekomendasi/Layanan Mahasiswa?</span>
+                    <span
+                        class="grid h-8 w-8 shrink-0 place-items-center rounded-full text-slate-400 transition-transform duration-300 group-open:rotate-180 group-open:text-sakinah-600">
+                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                    </span>
+                </summary>
+                <div class="mt-3 pr-8 text-sm leading-relaxed text-slate-600">
+                    Pengajuan surat rekomendasi dapat dilakukan melalui portal layanan mahasiswa dengan mengunggah draf
+                    permohonan, Kartu Tanda Mahasiswa (KTM), serta dokumen pendukung. Verifikasi berkas memerlukan waktu
+                    1–3 hari kerja.
+                </div>
+            </details>
+
+            <!-- Item FAQ 3 -->
+            <details class="group py-4">
+                <summary
+                    class="flex cursor-pointer items-center justify-between gap-4 font-semibold text-brand-700 transition-colors group-hover:text-sakinah-600 select-none">
+                    <span class="text-base">Bagaimana alur seleksi dan syarat pengajuan Beasiswa Kampus?</span>
+                    <span
+                        class="grid h-8 w-8 shrink-0 place-items-center rounded-full text-slate-400 transition-transform duration-300 group-open:rotate-180 group-open:text-sakinah-600">
+                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                    </span>
+                </summary>
+                <div class="mt-3 pr-8 text-sm leading-relaxed text-slate-600">
+                    Syarat utama pengajuan beasiswa mencakup IPK minimal 3.25, tidak sedang menerima beasiswa lain,
+                    serta aktif dalam kegiatan kemahasiswaan. Pendaftaran dilakukan secara terpusat melalui sistem
+                    informasi beasiswa.
+                </div>
+            </details>
+
+            <!-- Item FAQ 4 -->
+            <details class="group py-4">
+                <summary
+                    class="flex cursor-pointer items-center justify-between gap-4 font-semibold text-brand-700 transition-colors group-hover:text-sakinah-600 select-none">
+                    <span class="text-base">Apakah sertifikat pembinaan AIK wajib untuk syarat
+                        kelulusan/munaqasyah?</span>
+                    <span
+                        class="grid h-8 w-8 shrink-0 place-items-center rounded-full text-slate-400 transition-transform duration-300 group-open:rotate-180 group-open:text-sakinah-600">
+                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                    </span>
+                </summary>
+                <div class="mt-3 pr-8 text-sm leading-relaxed text-slate-600">
+                    Ya, sertifikat kelulusan Pembinaan Al-Islam dan Kemuhammadiyahan (AIK) merupakan salah satu syarat
+                    wajib berkas pendaftaran sidang munaqasyah / kelulusan mahasiswa.
+                </div>
+            </details>
+
+        </div>
+
+        <!-- GRID 2: FORM INPUT REQUEST PERTANYAAN (5 COLS) -->
+        <div class="rounded-3xl border border-slate-200 bg-slate-50/70 p-6 sm:p-8 lg:col-span-5">
+            <div class="mb-6">
+                <span class="text-xs font-bold uppercase tracking-wider text-sakinah-600">
+                    Punya Pertanyaan Lain?
+                </span>
+                <h3 class="mt-1 text-xl font-bold text-brand-700">
+                    Kirimkan Pertanyaan Anda
+                </h3>
+                <p class="mt-1 text-xs text-slate-500">
+                    Tim kami akan merespons pertanyaan atau kendala Anda secepatnya.
+                </p>
+            </div>
+
+            <form action="#" method="POST" class="space-y-4">
+                <!-- Input Nama -->
+                <div>
+                    <label for="faq-nama" class="block text-xs font-medium text-slate-700">Nama Lengkap</label>
+                    <input type="text" id="faq-nama" name="nama" placeholder="Masukkan nama Anda" required
+                        class="mt-1.5 w-full rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm text-slate-800 placeholder-slate-400 outline-none transition duration-200 focus:border-sakinah-600 focus:ring-2 focus:ring-sakinah-600/20" />
+                </div>
+
+                <!-- Input Email / NIM -->
+                <div>
+                    <label for="faq-email" class="block text-xs font-medium text-slate-700">Email / NIM</label>
+                    <input type="text" id="faq-email" name="email_nim" placeholder="nama@mahasiswa.ac.id atau NIM"
+                        required
+                        class="mt-1.5 w-full rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm text-slate-800 placeholder-slate-400 outline-none transition duration-200 focus:border-sakinah-600 focus:ring-2 focus:ring-sakinah-600/20" />
+                </div>
+
+                <!-- Select Kategori -->
+                <div>
+                    <label for="faq-kategori" class="block text-xs font-medium text-slate-700">Kategori
+                        Pertanyaan</label>
+                    <select id="faq-kategori" name="kategori"
+                        class="mt-1.5 w-full rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm text-slate-700 outline-none transition duration-200 focus:border-sakinah-600 focus:ring-2 focus:ring-sakinah-600/20">
+                        <option value="">Pilih Kategori...</option>
+                        <option value="ormawa">Organisasi & UKM</option>
+                        <option value="layanan">Layanan & Surat Rekomendasi</option>
+                        <option value="beasiswa">Beasiswa Kampus</option>
+                        <option value="aik">Pembinaan AIK</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                </div>
+
+                <!-- Textarea Pesan -->
+                <div>
+                    <label for="faq-pesan" class="block text-xs font-medium text-slate-700">Pertanyaan / Pesan</label>
+                    <textarea id="faq-pesan" name="pesan" rows="3"
+                        placeholder="Tuliskan pertanyaan Anda secara detail..." required
+                        class="mt-1.5 w-full rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm text-slate-800 placeholder-slate-400 outline-none transition duration-200 focus:border-sakinah-600 focus:ring-2 focus:ring-sakinah-600/20 resize-none"></textarea>
+                </div>
+
+                <!-- Tombol Submit -->
+                <button type="submit"
+                    class="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-sakinah-600 px-5 py-3 text-sm font-semibold text-white shadow-xs transition-all duration-200 hover:bg-sakinah-700 hover:shadow-md active:scale-[0.98]">
+                    <span>Kirim Pertanyaan</span>
+                    <i class="fa-solid fa-paper-plane text-xs"></i>
+                </button>
+            </form>
+        </div>
+
+    </div>
+</section>

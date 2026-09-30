@@ -1,0 +1,342 @@
+<!-- ORGANISASI MAHASISWA -->
+<section id="organisasi" class="scroll-mt-28 mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <div class="flex items-end justify-between">
+        <div>
+            <h2 class="text-2xl font-bold text-brand-700">Organisasi Mahasiswa</h2>
+            <p class="mt-1 text-sm text-slate-500">Wadah aspirasi dan kepemimpinan mahasiswa tingkat
+                universitas maupun program studi.</p>
+        </div>
+    </div>
+
+    <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Kartu 1: BEM -->
+        <article
+            class="group relative flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-xs transition-all duration-300 hover:-translate-y-1.5 hover:border-slate-300 hover:shadow-xl active:scale-[0.98] active:bg-slate-50">
+            <button type="button" data-modal-open="modal-bem"
+                class="absolute inset-0 z-10 w-full h-full text-left cursor-pointer"
+                aria-label="Lihat profil Badan Eksekutif Mahasiswa"></button>
+
+            <span
+                class="grid h-11 w-11 place-items-center rounded-xl bg-sakinah-50 text-sm font-bold text-sakinah-600 transition-colors duration-200 group-hover:bg-sakinah-100">
+                <img src="./images/logo.png" alt="Logo BEM">
+            </span>
+
+            <h3 class="mt-4 font-semibold text-brand-700 transition-colors duration-200 group-hover:text-sakinah-700">
+                Badan Eksekutif Mahasiswa
+            </h3>
+
+            <p class="mt-3 text-sm text-slate-600">
+                Mewujudkan mahasiswa yang aktif, kritis, dan berakhlak mulia lewat program kepemimpinan dan
+                bakti sosial.
+            </p>
+
+            <div
+                class="mt-auto pt-4 inline-flex items-center gap-1 text-sm font-semibold text-sakinah-600 transition-colors duration-200 group-hover:text-sakinah-700">
+                <span>Lihat profil</span>
+                <span aria-hidden="true"
+                    class="block transition-transform duration-200 group-hover:translate-x-1 rtl:rotate-180">&rarr;</span>
+            </div>
+        </article>
+
+        <!-- Kartu 2: DPM -->
+        <article
+            class="group relative flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-xs transition-all duration-300 hover:-translate-y-1.5 hover:border-slate-300 hover:shadow-xl active:scale-[0.98] active:bg-slate-50">
+            <button type="button" data-modal-open="modal-dpm"
+                class="absolute inset-0 z-10 w-full h-full text-left cursor-pointer"
+                aria-label="Lihat profil Dewan Perwakilan Mahasiswa"></button>
+
+            <span
+                class="grid h-11 w-11 place-items-center rounded-xl bg-sakinah-50 text-sm font-bold text-sakinah-600 transition-colors duration-200 group-hover:bg-sakinah-100">
+                <img src="./images/logo.png" alt="Logo DPM">
+            </span>
+
+            <h3 class="mt-4 font-semibold text-brand-700 transition-colors duration-200 group-hover:text-sakinah-700">
+                Dewan Perwakilan Mahasiswa
+            </h3>
+
+            <p class="mt-3 text-sm text-slate-600">
+                Mengawasi kinerja BEM dan menampung aspirasi mahasiswa melalui sidang rutin.
+            </p>
+
+            <div
+                class="mt-auto pt-4 inline-flex items-center gap-1 text-sm font-semibold text-sakinah-600 transition-colors duration-200 group-hover:text-sakinah-700">
+                <span>Lihat profil</span>
+                <span aria-hidden="true"
+                    class="block transition-transform duration-200 group-hover:translate-x-1 rtl:rotate-180">&rarr;</span>
+            </div>
+        </article>
+
+        <!-- Kartu 3: HMSI -->
+        <article
+            class="group relative flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-xs transition-all duration-300 hover:-translate-y-1.5 hover:border-slate-300 hover:shadow-xl active:scale-[0.98] active:bg-slate-50">
+            <button type="button" data-modal-open="modal-hmsi"
+                class="absolute inset-0 z-10 w-full h-full text-left cursor-pointer"
+                aria-label="Lihat profil HMJ Sistem Informasi"></button>
+
+            <span
+                class="grid h-11 w-11 place-items-center rounded-xl bg-sakinah-50 text-sm font-bold text-sakinah-600 transition-colors duration-200 group-hover:bg-sakinah-100">
+                <img src="./images/logo.png" alt="Logo HMSI">
+            </span>
+
+            <h3 class="mt-4 font-semibold text-brand-700 transition-colors duration-200 group-hover:text-sakinah-700">
+                HMJ Sistem Informasi
+            </h3>
+
+            <p class="mt-3 text-sm text-slate-600">
+                Mengadakan pelatihan coding, studi banding industri, dan lomba karya mahasiswa TI.
+            </p>
+
+            <div
+                class="mt-auto pt-4 inline-flex items-center gap-1 text-sm font-semibold text-sakinah-600 transition-colors duration-200 group-hover:text-sakinah-700">
+                <span>Lihat profil</span>
+                <span aria-hidden="true"
+                    class="block transition-transform duration-200 group-hover:translate-x-1 rtl:rotate-180">&rarr;</span>
+            </div>
+        </article>
+    </div>
+    <!-- ================= MODAL DIALOGS ORGANISASI MAHASISWA================= -->
+    <!-- Modal 1: BEM -->
+    <dialog id="modal-bem" closedby="any" aria-labelledby="modalBemTitle" aria-describedby="modalBemDesc"
+        class="m-auto w-full max-w-2xl rounded-2xl bg-white p-6 sm:p-8 shadow-2xl backdrop:bg-slate-900/50 backdrop:backdrop-blur-sm">
+        <div class="flex flex-col gap-6">
+            <!-- Header Modal -->
+            <div class="flex items-center gap-4 border-b border-slate-100 pb-4">
+                <span class="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-sakinah-50 text-sakinah-600">
+                    <img src="./images/logo.png" alt="Logo BEM" class="h-8 w-8 object-contain">
+                </span>
+                <div>
+                    <h2 id="modalBemTitle" class="text-xl font-bold text-brand-700 sm:text-2xl">
+                        Badan Eksekutif Mahasiswa
+                    </h2>
+                    <p class="text-xs text-slate-500">Organisasi Eksekutif Mahasiswa Kampus</p>
+                </div>
+            </div>
+
+            <div class="space-y-5 text-slate-600 text-sm leading-relaxed max-h-[60vh] overflow-y-auto pr-1">
+                <!-- Deskripsi -->
+                <p id="modalBemDesc" class="text-slate-600">
+                    Mewujudkan mahasiswa yang aktif, kritis, dan berakhlak mulia lewat program kepemimpinan dan
+                    bakti sosial. BEM bertanggung jawab menjalankan roda organisasi eksekutif di tingkat kampus.
+                </p>
+
+                <!-- Tanggung Jawab Utama -->
+                <div>
+                    <h3 class="font-semibold text-brand-700 mb-2">Tanggung Jawab Utama</h3>
+                    <ul class="list-disc list-inside space-y-1 text-slate-600">
+                        <li>Pelaksana kegiatan eksekutif dan bakti sosial tingkat kampus.</li>
+                        <li>Penyalur serta memperjuangkan hak-hak dan aspirasi mahasiswa.</li>
+                        <li>Mengkoordinasikan kegiatan seluruh UKM dan Himpunan Mahasiswa.</li>
+                    </ul>
+                </div>
+
+                <!-- Program Unggulan -->
+                <div>
+                    <h3 class="font-semibold text-brand-700 mb-2">Program Unggulan</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="rounded-lg bg-sakinah-50 px-3 py-1 text-xs font-medium text-sakinah-700">Latihan
+                            Kepemimpinan (LKMM)</span>
+                        <span class="rounded-lg bg-sakinah-50 px-3 py-1 text-xs font-medium text-sakinah-700">Bakti
+                            Sosial Kampus</span>
+                        <span class="rounded-lg bg-sakinah-50 px-3 py-1 text-xs font-medium text-sakinah-700">Pekan
+                            Olahraga & Seni</span>
+                    </div>
+                </div>
+
+                <!-- Informasi Kontak & Sosmed -->
+                <div class="border-t border-slate-100 pt-4 grid gap-3 sm:grid-cols-2 text-xs">
+                    <div>
+                        <span class="font-semibold text-brand-700 block mb-1">Instagram</span>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center gap-1.5 text-sakinah-600 hover:underline">
+                            <span>@bem_sibermu</span>
+                        </a>
+                    </div>
+                    <div>
+                        <span class="font-semibold text-brand-700 block mb-1">Kontak</span>
+                        <span class="text-slate-600">+62 812-3456-7890 (Secretariat)</span>
+                    </div>
+                </div>
+            </div><!-- Informasi Kontak & Sosial Media -->
+            <div class="rounded-2xl border border-slate-200 p-4">
+                <h4 class="font-semibold text-slate-800 text-sm mb-3">Informasi Kontak & Sosial Media</h4>
+                <div class="flex flex-wrap items-center gap-4 text-xs font-medium">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                        class="flex items-center gap-2 text-slate-600 hover:text-pink-600 transition-colors">
+                        <i class="fa-brands fa-instagram text-base"></i> @bem_official
+                    </a>
+                    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer"
+                        class="flex items-center gap-2 text-slate-600 hover:text-emerald-600 transition-colors">
+                        <i class="fa-brands fa-whatsapp text-base"></i> +62 812-3456-7890 (Secretariat)
+                    </a>
+                </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="pt-2 flex justify-end gap-2 border-t border-slate-100">
+                <button type="button" data-modal-close
+                    class="rounded-xl bg-slate-100 px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-200 focus:outline-none">
+                    Tutup
+                </button>
+                <a href="#"
+                    class="inline-flex items-center justify-center rounded-xl bg-[#1A2A5B] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#152249] focus:outline-none">
+                    Gabung Sekarang
+                </a>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Modal 2: DPM -->
+    <dialog id="modal-dpm" closedby="any" aria-labelledby="modalDpmTitle" aria-describedby="modalDpmDesc"
+        class="m-auto w-full max-w-2xl rounded-2xl bg-white p-6 sm:p-8 shadow-2xl backdrop:bg-slate-900/50 backdrop:backdrop-blur-sm">
+        <div class="flex flex-col gap-6">
+            <!-- Header Modal -->
+            <div class="flex items-center gap-4 border-b border-slate-100 pb-4">
+                <span class="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-sakinah-50 text-sakinah-600">
+                    <img src="./images/logo.png" alt="Logo DPM" class="h-8 w-8 object-contain">
+                </span>
+                <div>
+                    <h2 id="modalDpmTitle" class="text-xl font-bold text-brand-700 sm:text-2xl">
+                        Dewan Perwakilan Mahasiswa
+                    </h2>
+                    <p class="text-xs text-slate-500">Lembaga Legislatif Mahasiswa</p>
+                </div>
+            </div>
+
+            <div class="space-y-5 text-slate-600 text-sm leading-relaxed max-h-[60vh] overflow-y-auto pr-1">
+                <!-- Deskripsi -->
+                <p id="modalDpmDesc" class="text-slate-600">
+                    Mengawasi kinerja BEM dan menampung aspirasi mahasiswa melalui sidang rutin. DPM berfungsi
+                    sebagai lembaga legislatif tertinggi bagi seluruh mahasiswa.
+                </p>
+
+                <!-- Tanggung Jawab Utama -->
+                <div>
+                    <h3 class="font-semibold text-brand-700 mb-2">Tanggung Jawab Utama</h3>
+                    <ul class="list-disc list-inside space-y-1 text-slate-600">
+                        <li>Mengawasi pelaksanaan garis-garis besar program BEM.</li>
+                        <li>Menyerap, menampung, dan menindaklanjuti aspirasi mahasiswa.</li>
+                        <li>Merumuskan dan mengesahkan Peraturan Ormawa kampus.</li>
+                    </ul>
+                </div>
+
+                <!-- Program Unggulan -->
+                <div>
+                    <h3 class="font-semibold text-brand-700 mb-2">Program Unggulan</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="rounded-lg bg-sakinah-50 px-3 py-1 text-xs font-medium text-sakinah-700">Sidang
+                            Aspirasi Mahasiswa</span>
+                        <span class="rounded-lg bg-sakinah-50 px-3 py-1 text-xs font-medium text-sakinah-700">Audit
+                            Anggaran Ormawa</span>
+                        <span class="rounded-lg bg-sakinah-50 px-3 py-1 text-xs font-medium text-sakinah-700">Kongres
+                            Mahasiswa</span>
+                    </div>
+                </div>
+
+                <!-- Informasi Kontak & Sosial Media -->
+                <div class="rounded-2xl border border-slate-200 p-4">
+                    <h4 class="font-semibold text-slate-800 text-sm mb-3">Informasi Kontak & Sosial Media</h4>
+                    <div class="flex flex-wrap items-center gap-4 text-xs font-medium">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                            class="flex items-center gap-2 text-slate-600 hover:text-pink-600 transition-colors">
+                            <i class="fa-brands fa-instagram text-base"></i> @dpm_sibermu
+                        </a>
+                        <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer"
+                            class="flex items-center gap-2 text-slate-600 hover:text-emerald-600 transition-colors">
+                            <i class="fa-brands fa-whatsapp text-base"></i> +62 812-3456-7890 (Secretariat)
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="pt-2 flex justify-end gap-2 border-t border-slate-100">
+                <button type="button" data-modal-close
+                    class="rounded-xl bg-slate-100 px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-200 focus:outline-none">
+                    Tutup
+                </button>
+                <a href="#"
+                    class="inline-flex items-center justify-center rounded-xl bg-[#1A2A5B] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#152249] focus:outline-none">
+                    Gabung Sekarang
+                </a>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Modal 3: HMSI -->
+    <dialog id="modal-hmsi" closedby="any" aria-labelledby="modalHmsiTitle" aria-describedby="modalHmsiDesc"
+        class="m-auto w-full max-w-2xl rounded-2xl bg-white p-6 sm:p-8 shadow-2xl backdrop:bg-slate-900/50 backdrop:backdrop-blur-sm">
+        <div class="flex flex-col gap-6">
+            <!-- Header Modal -->
+            <div class="flex items-center gap-4 border-b border-slate-100 pb-4">
+                <span class="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-sakinah-50 text-sakinah-600">
+                    <img src="./images/logo.png" alt="Logo HMSI" class="h-8 w-8 object-contain">
+                </span>
+                <div>
+                    <h2 id="modalHmsiTitle" class="text-xl font-bold text-brand-700 sm:text-2xl">
+                        HMJ Sistem Informasi
+                    </h2>
+                    <p class="text-xs text-slate-500">Himpunan Mahasiswa Jurusan</p>
+                </div>
+            </div>
+
+            <div class="space-y-5 text-slate-600 text-sm leading-relaxed max-h-[60vh] overflow-y-auto pr-1">
+                <!-- Deskripsi -->
+                <p id="modalHmsiDesc" class="text-slate-600">
+                    Mengadakan pelatihan coding, studi banding industri, dan lomba karya mahasiswa TI. HMJ
+                    Sistem Informasi berfokus pada pengembangan skill teknis dan akademik mahasiswa.
+                </p>
+
+                <!-- Tanggung Jawab Utama -->
+                <div>
+                    <h3 class="font-semibold text-brand-700 mb-2">Tanggung Jawab Utama</h3>
+                    <ul class="list-disc list-inside space-y-1 text-slate-600">
+                        <li>Pengembangan keahlian teknis (coding, analisis sistem, database).</li>
+                        <li>Membangun jaringan relasi dengan praktisi dan industri IT.</li>
+                        <li>Penyelenggaraan akademik pendukung bagi mahasiswa jurusan SI.</li>
+                    </ul>
+                </div>
+
+                <!-- Program Unggulan -->
+                <div>
+                    <h3 class="font-semibold text-brand-700 mb-2">Program Unggulan</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="rounded-lg bg-sakinah-50 px-3 py-1 text-xs font-medium text-sakinah-700">SI
+                            BootCamp & Coding Class</span>
+                        <span class="rounded-lg bg-sakinah-50 px-3 py-1 text-xs font-medium text-sakinah-700">Company
+                            Visit & Tech Talk</span>
+                        <span class="rounded-lg bg-sakinah-50 px-3 py-1 text-xs font-medium text-sakinah-700">National
+                            IT Competition</span>
+                    </div>
+                </div>
+
+                <!-- Informasi Kontak & Sosmed -->
+                <!-- Informasi Kontak & Sosial Media -->
+                <div class="rounded-2xl border border-slate-200 p-4">
+                    <h4 class="font-semibold text-slate-800 text-sm mb-3">Informasi Kontak & Sosial Media</h4>
+                    <div class="flex flex-wrap items-center gap-4 text-xs font-medium">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                            class="flex items-center gap-2 text-slate-600 hover:text-pink-600 transition-colors">
+                            <i class="fa-brands fa-instagram text-base"></i> @hmsi_sibermu
+                        </a>
+                        <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer"
+                            class="flex items-center gap-2 text-slate-600 hover:text-emerald-600 transition-colors">
+                            <i class="fa-brands fa-whatsapp text-base"></i> +62 812-3456-7890 (Secretariat)
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="pt-2 flex justify-end gap-2 border-t border-slate-100">
+                <button type="button" data-modal-close
+                    class="rounded-xl bg-slate-100 px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-200 focus:outline-none">
+                    Tutup
+                </button>
+                <a href="#"
+                    class="inline-flex items-center justify-center rounded-xl bg-[#1A2A5B] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#152249] focus:outline-none">
+                    Gabung Sekarang
+                </a>
+            </div>
+        </div>
+    </dialog>
+</section>

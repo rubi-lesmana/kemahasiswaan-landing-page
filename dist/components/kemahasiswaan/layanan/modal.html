@@ -1,0 +1,555 @@
+<!-- Modal Konseling & Pendampingan -->
+<dialog id="modal-konseling"
+    class="m-auto w-full max-w-2xl rounded-3xl bg-white p-0 shadow-2xl backdrop:bg-slate-900/50 backdrop:backdrop-blur-sm">
+    <div class="relative max-h-[90vh] overflow-y-auto p-6 sm:p-8">
+        <!-- Tombol Close -->
+        <button data-modal-close
+            class="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-700">
+            <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+
+        <!-- Header Modal -->
+        <div class="flex items-center gap-4 border-b border-slate-100 pb-5">
+            <span
+                class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-emerald-50 text-2xl text-emerald-600">
+                <i class="fa-solid fa-user-nurse"></i>
+            </span>
+            <div>
+                <span class="rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-700">Layanan
+                    Mahasiswa</span>
+                <h3 class="mt-1 text-2xl font-bold text-[#1A2A5B]">Konseling &amp; Pendampingan</h3>
+            </div>
+        </div>
+
+        <!-- Body Content -->
+        <div class="mt-6 space-y-6 text-slate-600">
+            <div>
+                <h4 class="font-semibold text-slate-800">Tentang Layanan</h4>
+                <p class="mt-1 text-sm leading-relaxed">
+                    Layanan Konseling &amp; Pendampingan hadir sebagai ruang aman (safe space) bagi mahasiswa untuk
+                    berkonsultasi mengenai kesehatan mental, adaptasi kehidupan kampus, kendala akademik, hingga
+                    permasalahan pribadi secara **privat, proaktif, dan terjamin kerahasiaannya**.
+                </p>
+            </div>
+
+            <!-- Jenis Layanan Grid -->
+            <div class="grid gap-4 sm:grid-cols-2">
+                <div class="rounded-2xl border border-slate-100 bg-slate-50 p-4">
+                    <h5 class="mb-2 flex items-center gap-2 text-sm font-semibold text-slate-800">
+                        <i class="fa-solid fa-brain text-emerald-600"></i> Konseling Psikologis
+                    </h5>
+                    <p class="text-xs leading-relaxed text-slate-600">
+                        Pendampingan profesional terkait manajemen stres, kecemasan, kelelahan mental (burnout),
+                        serta masalah personal.
+                    </p>
+                </div>
+
+                <div class="rounded-2xl border border-slate-100 bg-slate-50 p-4">
+                    <h5 class="mb-2 flex items-center gap-2 text-sm font-semibold text-slate-800">
+                        <i class="fa-solid fa-graduation-cap text-emerald-600"></i> Bimbingan Akademik
+                    </h5>
+                    <p class="text-xs leading-relaxed text-slate-600">
+                        Diskusi dan pendampingan untuk mengatasi hambatan studi, motivasi belajar, serta perencanaan
+                        karier masa depan.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Detail Alur & Jadwal -->
+            <div class="rounded-2xl border border-emerald-100 bg-emerald-50/50 p-4">
+                <h4 class="mb-2 text-sm font-semibold text-emerald-900">Prosedur &amp; Jadwal Konseling</h4>
+                <ul class="space-y-1.5 text-xs text-emerald-800">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                        <span><strong>Jadwal Operasional:</strong> Senin – Jumat | 09.00 – 15.00 WIB</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                        <span><strong>Format Konseling:</strong> Tersedia Tatap Muka (Offline) &amp; Online
+                            (Zoom/Google Meet)</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                        <span><strong>Kerahasiaan:</strong> Seluruh isi sesi konseling dilindungi oleh kode etik
+                            kerahasiaan.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Kontak Layanan -->
+            <div class="rounded-2xl border border-slate-200 p-4">
+                <h4 class="mb-3 text-sm font-semibold text-slate-800">Hubungi Konselor</h4>
+                <div class="flex flex-wrap items-center gap-4 text-xs font-medium">
+                    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer"
+                        class="flex items-center gap-2 text-slate-600 transition-colors hover:text-emerald-600">
+                        <i class="fa-brands fa-whatsapp text-base text-emerald-500"></i> +62 812-3456-7890 (Layanan
+                        Konseling)
+                    </a>
+                    <a href="mailto:konseling@kampus.ac.id"
+                        class="flex items-center gap-2 text-slate-600 transition-colors hover:text-emerald-600">
+                        <i class="fa-regular fa-envelope text-base text-emerald-500"></i> konseling@kampus.ac.id
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Modal -->
+        <div class="mt-8 flex items-center justify-end gap-3 border-t border-slate-100 pt-5">
+            <button data-modal-close
+                class="rounded-xl px-5 py-2.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-100">
+                Tutup
+            </button>
+            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-700">
+                <span>Buat Janji Konseling</span>
+                <i class="fa-solid fa-calendar-check text-xs"></i>
+            </a>
+        </div>
+    </div>
+</dialog>
+
+<!-- Modal Aspirasi & Pengaduan -->
+<dialog id="modal-aspirasi"
+    class="m-auto w-full max-w-2xl rounded-3xl bg-white p-0 shadow-2xl backdrop:bg-slate-900/50 backdrop:backdrop-blur-sm">
+    <div class="relative max-h-[90vh] overflow-y-auto p-6 sm:p-8">
+        <!-- Tombol Close -->
+        <button data-modal-close
+            class="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-700">
+            <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+
+        <!-- Header Modal -->
+        <div class="flex items-center gap-4 border-b border-slate-100 pb-5">
+            <span
+                class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-emerald-50 text-2xl text-emerald-600">
+                <i class="fa-solid fa-comments"></i>
+            </span>
+            <div>
+                <span class="rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-700">Layanan
+                    Mahasiswa</span>
+                <h3 class="mt-1 text-2xl font-bold text-[#1A2A5B]">Aspirasi &amp; Pengaduan</h3>
+            </div>
+        </div>
+
+        <!-- Body Content -->
+        <div class="mt-6 space-y-6 text-slate-600">
+            <div>
+                <h4 class="font-semibold text-slate-800">Tentang Layanan</h4>
+                <p class="mt-1 text-sm leading-relaxed">
+                    Kanal resmi penyampaian suara mahasiswa untuk mendorong perbaikan kualitas akademik, sarana
+                    prasarana, serta pelayanan lingkungan kampus. Seluruh laporan diproses secara transparan, akuntabel,
+                    dan dapat disampaikan secara **anonim**.
+                </p>
+            </div>
+
+            <!-- Kategori Pengaduan Grid -->
+            <div class="grid gap-4 sm:grid-cols-2">
+                <div class="rounded-2xl border border-slate-100 bg-slate-50 p-4">
+                    <h5 class="mb-2 flex items-center gap-2 text-sm font-semibold text-slate-800">
+                        <i class="fa-solid fa-building-columns text-emerald-600"></i> Fasilitas &amp; Prasarana
+                    </h5>
+                    <p class="text-xs leading-relaxed text-slate-600">
+                        Laporan kerusakan fasilitas kelas, laboratorium, akses Wi-Fi, kebersihan, dan sarana umum
+                        kampus.
+                    </p>
+                </div>
+
+                <div class="rounded-2xl border border-slate-100 bg-slate-50 p-4">
+                    <h5 class="mb-2 flex items-center gap-2 text-sm font-semibold text-slate-800">
+                        <i class="fa-solid fa-book-open text-emerald-600"></i> Akademik &amp; Pelayanan
+                    </h5>
+                    <p class="text-xs leading-relaxed text-slate-600">
+                        Masukan terkait jadwal perkuliahan, proses administrasi, layanan dosen, serta kegiatan
+                        kemahasiswaan.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Alur Penanganan -->
+            <div class="rounded-2xl border border-emerald-100 bg-emerald-50/50 p-4">
+                <h4 class="mb-2 text-sm font-semibold text-emerald-900">Alur &amp; Ketentuan Pelaporan</h4>
+                <ul class="space-y-1.5 text-xs text-emerald-800">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                        <span><strong>Verifikasi Laporan:</strong> Tim aduan akan memverifikasi kelengkapan data dalam
+                            1x24 jam.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                        <span><strong>Tindak Lanjut:</strong> Laporan diteruskan ke pihak terkait dengan estimasi
+                            penyelesaian 3–5 hari kerja.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                        <span><strong>Pilihan Anonim:</strong> Identitas pelapor dijamin kerahasiaannya jika memilih
+                            opsi anonim.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Kontak / Layanan Cepat -->
+            <div class="rounded-2xl border border-slate-200 p-4">
+                <h4 class="mb-3 text-sm font-semibold text-slate-800">Kanal Layanan Lainnya</h4>
+                <div class="flex flex-wrap items-center gap-4 text-xs font-medium">
+                    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer"
+                        class="flex items-center gap-2 text-slate-600 transition-colors hover:text-emerald-600">
+                        <i class="fa-brands fa-whatsapp text-base text-emerald-500"></i> +62 812-3456-7890 (Helpdesk
+                        Kampus)
+                    </a>
+                    <a href="mailto:pengaduan@kampus.ac.id"
+                        class="flex items-center gap-2 text-slate-600 transition-colors hover:text-emerald-600">
+                        <i class="fa-regular fa-envelope text-base text-emerald-500"></i> pengaduan@kampus.ac.id
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Modal -->
+        <div class="mt-8 flex items-center justify-end gap-3 border-t border-slate-100 pt-5">
+            <button data-modal-close
+                class="rounded-xl px-5 py-2.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-100">
+                Tutup
+            </button>
+            <a href="https://forms.google.com" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-700">
+                <span>Kirim Aspirasi Sekarang</span>
+                <i class="fa-solid fa-paper-plane text-xs"></i>
+            </a>
+        </div>
+    </div>
+</dialog>
+
+<!-- Modal Pendampingan AIK -->
+<dialog id="modal-aik"
+    class="m-auto w-full max-w-2xl rounded-3xl bg-white p-0 shadow-2xl backdrop:bg-slate-900/50 backdrop:backdrop-blur-sm">
+    <div class="relative max-h-[90vh] overflow-y-auto p-6 sm:p-8">
+        <!-- Tombol Close -->
+        <button data-modal-close
+            class="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-700">
+            <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+
+        <!-- Header Modal -->
+        <div class="flex items-center gap-4 border-b border-slate-100 pb-5">
+            <span
+                class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-emerald-50 text-2xl text-emerald-600">
+                <i class="fa-solid fa-book-quran"></i>
+            </span>
+            <div>
+                <span class="rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-700">Layanan
+                    Mahasiswa</span>
+                <h3 class="mt-1 text-2xl font-bold text-[#1A2A5B]">Pendampingan AIK</h3>
+            </div>
+        </div>
+
+        <!-- Body Content -->
+        <div class="mt-6 space-y-6 text-slate-600">
+            <div>
+                <h4 class="font-semibold text-slate-800">Tentang Program</h4>
+                <p class="mt-1 text-sm leading-relaxed">
+                    Program Pendampingan Al-Islam dan Kemuhammadiyahan (AIK) dirancang untuk membimbing mahasiswa dalam
+                    penguatan nilai-nilai keislaman, penyempurnaan ibadah praktis, pembimbingan baca-tulis Al-Qur'an
+                    (BTQ), hingga pelaksanaan sertifikasi Baitul Arqam Mahasiswa.
+                </p>
+            </div>
+
+            <!-- Program Utama Grid -->
+            <div class="grid gap-4 sm:grid-cols-2">
+                <div class="rounded-2xl border border-slate-100 bg-slate-50 p-4">
+                    <h5 class="mb-2 flex items-center gap-2 text-sm font-semibold text-slate-800">
+                        <i class="fa-solid fa-quran text-emerald-600"></i> Bimbingan BTQ &amp; Tahsin
+                    </h5>
+                    <p class="text-xs leading-relaxed text-slate-600">
+                        Pembinaan kelancaran membaca Al-Qur'an, tajwid, serta hafalan surah-surah pendek untuk persiapan
+                        kelulusan.
+                    </p>
+                </div>
+
+                <div class="rounded-2xl border border-slate-100 bg-slate-50 p-4">
+                    <h5 class="mb-2 flex items-center gap-2 text-sm font-semibold text-slate-800">
+                        <i class="fa-solid fa-users-gear text-emerald-600"></i> Baitul Arqam (BAM)
+                    </h5>
+                    <p class="text-xs leading-relaxed text-slate-600">
+                        Pelatihan karakter, ideologi Kemuhammadiyahan, dan kepemimpinan Islam bagi mahasiswa baru &amp;
+                        tingkat akhir.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ketentuan & Layanan Tambahan -->
+            <div class="rounded-2xl border border-emerald-100 bg-emerald-50/50 p-4">
+                <h4 class="mb-2 text-sm font-semibold text-emerald-900">Layanan &amp; Fasilitas AIK</h4>
+                <ul class="space-y-1.5 text-xs text-emerald-800">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                        <span><strong>Setoran Hafalan &amp; Tes BTQ:</strong> Dapat dijadwalkan secara individu maupun
+                            kelompok.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                        <span><strong>Sertifikat AIK:</strong> Syarat kelengkapan administrasi tugas akhir / skripsi dan
+                            wisuda.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                        <span><strong>Konsultasi Keislaman:</strong> Bimbingan fikih ibadah dan muamalah harian bersama
+                            instruktur LPIK.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Kontak Layanan AIK -->
+            <div class="rounded-2xl border border-slate-200 p-4">
+                <h4 class="mb-3 text-sm font-semibold text-slate-800">Sekretariat AIK &amp; Informasi</h4>
+                <div class="flex flex-wrap items-center gap-4 text-xs font-medium">
+                    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer"
+                        class="flex items-center gap-2 text-slate-600 transition-colors hover:text-emerald-600">
+                        <i class="fa-brands fa-whatsapp text-base text-emerald-500"></i> +62 812-3456-7890 (Admin
+                        Pendampingan AIK)
+                    </a>
+                    <a href="mailto:aik@kampus.ac.id"
+                        class="flex items-center gap-2 text-slate-600 transition-colors hover:text-emerald-600">
+                        <i class="fa-regular fa-envelope text-base text-emerald-500"></i> aik@kampus.ac.id
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Modal -->
+        <div class="mt-8 flex items-center justify-end gap-3 border-t border-slate-100 pt-5">
+            <button data-modal-close
+                class="rounded-xl px-5 py-2.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-100">
+                Tutup
+            </button>
+            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-700">
+                <span>Daftar / Konsultasi AIK</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+    </div>
+</dialog>
+
+<!-- Modal Beasiswa & Bantuan -->
+<dialog id="modal-beasiswa"
+    class="m-auto w-full max-w-2xl rounded-3xl bg-white p-0 shadow-2xl backdrop:bg-slate-900/50 backdrop:backdrop-blur-sm">
+    <div class="relative max-h-[90vh] overflow-y-auto p-6 sm:p-8">
+        <!-- Tombol Close -->
+        <button data-modal-close
+            class="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-700">
+            <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+
+        <!-- Header Modal -->
+        <div class="flex items-center gap-4 border-b border-slate-100 pb-5">
+            <span
+                class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-emerald-50 text-2xl text-emerald-600">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </span>
+            <div>
+                <span class="rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-700">Layanan
+                    Mahasiswa</span>
+                <h3 class="mt-1 text-2xl font-bold text-[#1A2A5B]">Beasiswa &amp; Bantuan Studi</h3>
+            </div>
+        </div>
+
+        <!-- Body Content -->
+        <div class="mt-6 space-y-6 text-slate-600">
+            <div>
+                <h4 class="font-semibold text-slate-800">Tentang Layanan Beasiswa</h4>
+                <p class="mt-1 text-sm leading-relaxed">
+                    Layanan ini memfasilitasi pengajuan, pendataan, serta penyaluran berbagai program beasiswa
+                    pemerintah,
+                    internal kampus, maupun mitra industri untuk mendukung kelancaran studi dan memberikan apresiasi
+                    atas
+                    prestasi mahasiswa.
+                </p>
+            </div>
+
+            <!-- Program Utama Grid -->
+            <div class="grid gap-4 sm:grid-cols-2">
+                <div class="rounded-2xl border border-slate-100 bg-slate-50 p-4">
+                    <h5 class="mb-2 flex items-center gap-2 text-sm font-semibold text-slate-800">
+                        <i class="fa-solid fa-award text-emerald-600"></i> KIP Kuliah &amp; Beasiswa APBN
+                    </h5>
+                    <p class="text-xs leading-relaxed text-slate-600">
+                        Bantuan biaya pendidikan penuh dan tunjangan biaya hidup bagi mahasiswa berprestasi dari
+                        keluarga kurang mampu.
+                    </p>
+                </div>
+
+                <div class="rounded-2xl border border-slate-100 bg-slate-50 p-4">
+                    <h5 class="mb-2 flex items-center gap-2 text-sm font-semibold text-slate-800">
+                        <i class="fa-solid fa-star text-emerald-600"></i> Beasiswa Prestasi &amp; Mitra
+                    </h5>
+                    <p class="text-xs leading-relaxed text-slate-600">
+                        Apresiasi pembebasan/potongan biaya kuliah atas capaian akademik, olahraga, seni, serta kerja
+                        sama mitra lembaga/BUMN.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ketentuan & Layanan Tambahan -->
+            <div class="rounded-2xl border border-emerald-100 bg-emerald-50/50 p-4">
+                <h4 class="mb-2 text-sm font-semibold text-emerald-900">Bantuan &amp; Keringanan Biaya Studi</h4>
+                <ul class="space-y-1.5 text-xs text-emerald-800">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                        <span><strong>Skema Cicilan &amp; Keringanan UKT:</strong> Pengajuan perpanjangan atau
+                            keringanan pembayaran biaya kuliah semester.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                        <span><strong>Bantuan Biaya Darurat:</strong> Dukungan finansial khusus bagi mahasiswa yang
+                            mengalami kendala ekonomi mendesak.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                        <span><strong>Surat Rekomendasi Beasiswa:</strong> Layanan pembuatan surat
+                            keterangan/rekomendasi untuk beasiswa eksternal.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Kontak Layanan Beasiswa -->
+            <div class="rounded-2xl border border-slate-200 p-4">
+                <h4 class="mb-3 text-sm font-semibold text-slate-800">Layanan Informasi Beasiswa</h4>
+                <div class="flex flex-wrap items-center gap-4 text-xs font-medium">
+                    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer"
+                        class="flex items-center gap-2 text-slate-600 transition-colors hover:text-emerald-600">
+                        <i class="fa-brands fa-whatsapp text-base text-emerald-500"></i> +62 812-3456-7890 (Helpdesk
+                        Beasiswa)
+                    </a>
+                    <a href="mailto:beasiswa@kampus.ac.id"
+                        class="flex items-center gap-2 text-slate-600 transition-colors hover:text-emerald-600">
+                        <i class="fa-regular fa-envelope text-base text-emerald-500"></i> beasiswa@kampus.ac.id
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Modal -->
+        <div class="mt-8 flex items-center justify-end gap-3 border-t border-slate-100 pt-5">
+            <button data-modal-close
+                class="rounded-xl px-5 py-2.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-100">
+                Tutup
+            </button>
+            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-700">
+                <span>Ajukan / Informasi Beasiswa</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+    </div>
+</dialog>
+
+<!-- Modal Administrasi Mahasiswa -->
+<dialog id="modal-administrasi"
+    class="m-auto w-full max-w-2xl rounded-3xl bg-white p-0 shadow-2xl backdrop:bg-slate-900/50 backdrop:backdrop-blur-sm">
+    <div class="relative max-h-[90vh] overflow-y-auto p-6 sm:p-8">
+        <!-- Tombol Close -->
+        <button data-modal-close
+            class="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-700">
+            <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+
+        <!-- Header Modal -->
+        <div class="flex items-center gap-4 border-b border-slate-100 pb-5">
+            <span
+                class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-emerald-50 text-2xl text-emerald-600">
+                <i class="fa-solid fa-id-card"></i>
+            </span>
+            <div>
+                <span class="rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-700">Layanan
+                    Mahasiswa</span>
+                <h3 class="mt-1 text-2xl font-bold text-[#1A2A5B]">Administrasi Mahasiswa</h3>
+            </div>
+        </div>
+
+        <!-- Body Content -->
+        <div class="mt-6 space-y-6 text-slate-600">
+            <div>
+                <h4 class="font-semibold text-slate-800">Tentang Layanan Administrasi</h4>
+                <p class="mt-1 text-sm leading-relaxed">
+                    Layanan administrasi mahasiswa mengurus berbagai kebutuhan dokumen legal akademik dan identitas
+                    mahasiswa selama menjalani masa studi di perguruan tinggi.
+                </p>
+            </div>
+
+            <!-- Program/Layanan Utama Grid -->
+            <div class="grid gap-4 sm:grid-cols-2">
+                <div class="rounded-2xl border border-slate-100 bg-slate-50 p-4">
+                    <h5 class="mb-2 flex items-center gap-2 text-sm font-semibold text-slate-800">
+                        <i class="fa-solid fa-address-card text-emerald-600"></i> Kartu Tanda Mahasiswa (KTM)
+                    </h5>
+                    <p class="text-xs leading-relaxed text-slate-600">
+                        Pencetakan KTM baru, penggantian KTM hilang/rusak, serta pengaktifan kembali fisik atau digital
+                        KTM.
+                    </p>
+                </div>
+
+                <div class="rounded-2xl border border-slate-100 bg-slate-50 p-4">
+                    <h5 class="mb-2 flex items-center gap-2 text-sm font-semibold text-slate-800">
+                        <i class="fa-solid fa-file-signature text-emerald-600"></i> Surat Keterangan Aktif
+                    </h5>
+                    <p class="text-xs leading-relaxed text-slate-600">
+                        Penerbitan surat keterangan aktif kuliah untuk keperluan BPJS, tunjangan gaji orang tua, atau
+                        pengajuan beasiswa.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Detail Layanan Lainnya -->
+            <div class="rounded-2xl border border-emerald-100 bg-emerald-50/50 p-4">
+                <h4 class="mb-2 text-sm font-semibold text-emerald-900">Dokumen &amp; Perizinan Lainnya</h4>
+                <ul class="space-y-1.5 text-xs text-emerald-800">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                        <span><strong>Surat Dispensasi Kuliah:</strong> Permohonan izin/dispensasi mengikuti kegiatan
+                            perlombaan atau organisasi.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                        <span><strong>Surat Rujukan &amp; Rekomendasi:</strong> Pembuatan surat antar-lembaga atau
+                            rekomendasi kegiatan kemahasiswaan.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                        <span><strong>Legalisir Dokumen:</strong> Pengesahan fotokopi dokumen kemahasiswaan dan
+                            sertifikat kegiatan resmi.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Informasi Kontak & Lokasi -->
+            <div class="rounded-2xl border border-slate-200 p-4">
+                <h4 class="mb-3 text-sm font-semibold text-slate-800">Layanan Loket Administrasi</h4>
+                <div class="flex flex-wrap items-center gap-4 text-xs font-medium">
+                    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer"
+                        class="flex items-center gap-2 text-slate-600 transition-colors hover:text-emerald-600">
+                        <i class="fa-brands fa-whatsapp text-base text-emerald-500"></i> +62 812-3456-7890 (Helpdesk
+                        Admin)
+                    </a>
+                    <a href="mailto:admin.kemahasiswaan@kampus.ac.id"
+                        class="flex items-center gap-2 text-slate-600 transition-colors hover:text-emerald-600">
+                        <i class="fa-regular fa-envelope text-base text-emerald-500"></i>
+                        admin.kemahasiswaan@kampus.ac.id
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Modal -->
+        <div class="mt-8 flex items-center justify-end gap-3 border-t border-slate-100 pt-5">
+            <button data-modal-close
+                class="rounded-xl px-5 py-2.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-100">
+                Tutup
+            </button>
+            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-700">
+                <span>Layanan Persurat &amp; KTM</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+    </div>
+</dialog>

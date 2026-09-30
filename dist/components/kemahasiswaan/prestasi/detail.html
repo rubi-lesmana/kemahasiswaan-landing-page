@@ -1,0 +1,118 @@
+<article data-prestasi-detail class="max-w-5xl mx-auto px-6 sm:px-10 pt-10 pb-20">
+
+    <!-- Tombol kembali -->
+    <a href="index.html#prestasi"
+        class="inline-flex items-center text-sm text-slate-500 hover:text-slate-900 transition-colors mb-8">
+        &larr;&nbsp;Kembali
+    </a>
+
+    <!-- Header: judul + meta (3 kolom) + ringkasan + tombol -->
+    <header class="max-w-3xl">
+        <!-- Judul diisi oleh js/prestasi.js -->
+        <h1 data-prestasi-title
+            class="text-3xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-slate-900 mb-5"></h1>
+
+        <dl class="flex flex-wrap gap-x-8 gap-y-4 mb-8 text-xs">
+            <div>
+                <dt class="text-slate-400 mb-1">Tanggal</dt>
+                <dd data-prestasi-date class="text-slate-900"></dd>
+            </div>
+            <div>
+                <dt class="text-slate-400 mb-1">Kategori</dt>
+                <dd data-prestasi-category class="text-slate-900"></dd>
+            </div>
+            <div>
+                <dt class="text-slate-400 mb-1">Penulis</dt>
+                <dd class="text-slate-900">Humas Kampus</dd>
+            </div>
+        </dl>
+
+        <p class="text-sm text-slate-600 leading-relaxed mb-6">
+            Rubi Lesmana, mahasiswa Program Studi Sistem Informasi, berhasil meraih Juara 1 pada Lomba Karya Tulis
+            Ilmiah tingkat nasional yang diselenggarakan tahun ini.
+        </p>
+
+        <a href="#konten" class="inline-flex items-center gap-3 group">
+            <span
+                class="flex h-7 w-7 items-center justify-center rounded-full bg-slate-900 text-white text-[11px] transition-transform group-hover:translate-y-0.5">
+                <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+            </span>
+            <span class="text-[10px] font-medium tracking-wide text-slate-600">Baca selengkapnya</span>
+        </a>
+    </header>
+
+    <!-- Gambar utama: diisi oleh js/prestasi.js -->
+    <figure class="mt-12 mb-16">
+        <img data-prestasi-image src="" alt="" class="w-full aspect-[16/10] object-cover rounded-sm">
+    </figure>
+
+    <!-- Konten: kolom share (kiri) + isi (kanan) -->
+    <div id="konten" class="grid grid-cols-[2.5rem_1fr] sm:grid-cols-[6rem_1fr] gap-x-4 scroll-mt-28">
+
+        <!-- Ikon share -->
+        <aside>
+            <ul class="sticky top-28 flex flex-col gap-4 text-base text-slate-500">
+                <li>
+                    <a href="#" aria-label="Bagikan ke Instagram" class="hover:text-slate-900 transition-colors">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Bagikan ke X" class="hover:text-slate-900 transition-colors">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Bagikan ke WhatsApp" class="hover:text-slate-900 transition-colors">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Isi artikel (sama untuk semua prestasi) -->
+        <div class="max-w-2xl">
+            <h2 class="text-xl sm:text-2xl font-medium tracking-tight text-slate-900 mb-4">
+                Karya yang mengungguli puluhan peserta
+            </h2>
+
+            <div class="space-y-4 text-sm leading-relaxed text-slate-600">
+                <p>
+                    Rubi Lesmana, mahasiswa Program Studi Sistem Informasi, berhasil meraih Juara 1 pada Lomba Karya
+                    Tulis Ilmiah tingkat nasional yang diselenggarakan tahun ini.
+                </p>
+                <p>
+                    Karya tulis ilmiah bertajuk pengembangan sistem terdistribusi ini berhasil mengalahkan puluhan
+                    peserta dari berbagai perguruan tinggi terkemuka di Indonesia.
+                </p>
+            </div>
+
+            <h3 class="text-base font-medium text-slate-900 mt-10 mb-3">Inovasi Teknologi Berbuah Manis di Ajang
+                Nasional</h3>
+            <p class="text-sm leading-relaxed text-slate-600">
+                Prestasi membanggakan kembali diukir oleh civitas akademika. Rubi Lesmana, mahasiswa Program Studi
+                Sistem Informasi, berhasil membawa pulang gelar Juara 1 dalam ajang Lomba Karya Tulis Ilmiah (LKTI)
+                Tingkat Nasional 2026. Melalui gagasannya yang solutif dan berbasis teknologi informasi, Rubi mampu
+                menyisihkan puluhan tim kompetitor dari berbagai perguruan tinggi terkemuka di Indonesia.
+            </p>
+
+            <h3 class="text-base font-medium text-slate-900 mt-10 mb-3">Perjuangan dan Dedikasi di Balik Karya Ilmiah
+                Terbaik</h3>
+            <p class="text-sm leading-relaxed text-slate-600">
+                Capaian ini tidak diraih secara instan. Proses panjang mulai dari riset mendalam, perancangan sistem,
+                hingga tahap presentasi di hadapan dewan juri dilalui Rubi dengan penuh komitmen. Karya tulis yang
+                diusungnya dinilai memiliki keunggulan dari segi kebaruan ide, dampak nyata bagi masyarakat, serta
+                integrasi teknologi Sistem Informasi yang relevan dengan tantangan masa kini.
+            </p>
+
+            <h3 class="text-base font-medium text-slate-900 mt-10 mb-3">Menginspirasi Generasi Muda untuk Terus Berkarya
+            </h3>
+            <p class="text-sm leading-relaxed text-slate-600">
+                Kemenangan Rubi Lesmana menjadi bukti nyata kualitas serta daya saing mahasiswa Sistem Informasi di
+                kancah nasional. Prestasi ini diharapkan dapat membakar semangat dan menginspirasi seluruh mahasiswa
+                lainnya untuk terus mengeksplorasi potensi diri, berinovasi, dan tidak ragu berkompetisi di tingkat yang
+                lebih tinggi.
+            </p>
+        </div>
+    </div>
+</article>
